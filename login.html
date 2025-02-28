@@ -5,21 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <script language="javascript"> alert("Welcome to my website");</script>
 </head>
 
 <body>
 
-    <table border="0" align="center">
-        <tr><td align="center"><img src="images/login.png" width="100" alt="User icon"><br></br></td></tr>
-        <!--<tr><td><label for="username">Username:</label></td></tr>-->
-        <tr><td align="center"><input type="email" id="username" name="username" placeholder="user@mail.com"><br><br></td></tr>
-        <!--<tr><td ><label for="password">Password</label></td></tr>-->
-        <tr><td align="center"><input type="password" id="password" name="password" placeholder="*********"><br><br></td></tr>
-        <tr><td align="center"><button type="submit">Sign in</button><br></br></td></tr>
-        <tr><td align="center"><a href="#" font size="2">Sign up</a></td></tr>
-        <tr><td align="center"><a href="#" font size="2">Forgot password</a></td></tr>
-        <tr><td align="center"><a href="#" font size="2">Terms and conditions</a></td></tr>
-    </table>
+    <form action="/login" method="POST">
+        <table border="0" align="center" class="login-form">
+            <tr>
+                <td align="center"><img src="images/login.png" width="100" alt="User icon"><br></br></td>
+            </tr>
+            <tr>
+                <td align="center"><label for="username">Username:</label><br>
+                    <input type="email" id="username" name="username" placeholder="user@mail.com" required><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td align="center"><label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" placeholder="*********" required><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td align="center"><button type="submit" class="btn">Sign in</button><br></br></td>
+            </tr>
+            <tr>
+                <td align="center"><a href="#" class="link">Sign up</a></td>
+            </tr>
+            <tr>
+                <td align="center"><a href="#" class="link">Forgot password</a></td>
+            </tr>
+            <tr>
+                <td align="center"><a href="#" class="link">Terms and conditions</a></td>
+            </tr>
+        </table>
+    </form>
 
 </body>
 
